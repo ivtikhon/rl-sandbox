@@ -9,10 +9,9 @@ Currently, the repository includes the following algorithms:
 1. **Policy Gradient with Baseline** ([policy-gradient-baseline.ipynb](policy-gradient-baseline.ipynb))
    - This notebook implements the vanilla policy gradient algorithm with a baseline, which reduces the variance of the gradient estimates and leads to more stable learning.
    - The baseline is typically the state-value function, which helps in faster convergence.
-2. **Natural Policy Gradients** ([natural-policy-gradient.ipynb](natural-policy-gradient.ipynb))
-   - This notebook implements the natural policy gradient algorithm, which improves upon standard policy gradient methods by using a Fisher information matrix to account for the geometry of the policy space.
-   - It is designed to make more efficient updates to the policy by considering the "natural" gradient, leading to faster convergence in many cases.
-
+2. **Trust Region Policy Optimization (TRPO)** ([trpo.ipynb](trpo.ipynb))
+   - This notebook demonstrates the TRPO algorithm, which improves policy optimization by enforcing a trust region constraint, ensuring stable and monotonic policy updates.
+   - TRPO is known for its reliability and effectiveness in complex RL environments.
 ## Getting Started
 
 ### Prerequisites
